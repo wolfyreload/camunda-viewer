@@ -34,5 +34,27 @@ easily get the full history of a task, which is not available in the Camunda UI 
 
 Run build.sh or build.bat (for Windows) to build the application
 
+This will create a "Release" folder, you can start the application with main.exe 
 
+## Usage
+
+* Copy **config.postgres.example.json** to **test.json**
+* Modify **test.json** to point to your PostgreSQL database (if you have multiple Camunda sites then make multiple .json files, one for each)
+* Start the application with **main.exe**
+* Open a browser and navigate to http://localhost:9566
+* Select your environment
+
+![select-environment](img/select-environment.png)
+
+* Select the Camunda process you wish to view
+
+![camunda-process](img/camunda-process.png)
+
+* Select the task you want to view
+
+![task](img/task.png)
+
+* View the task history and variables
+
+![task-history](img/task-history.png)
 
