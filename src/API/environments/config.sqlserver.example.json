@@ -1,8 +1,0 @@
-{
-  "driver": "ODBC Driver 18 for SQL Server",
-  "host": "localhost",
-  "port": "1433",
-  "database": "Camunda",
-  "user": "sa",
-  "password": "password123!"
-}
