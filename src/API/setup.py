@@ -29,7 +29,7 @@ include_files.append(("config.json", "config.json"))
 
 setup(
     name='CamundaViewer',
-    version='1.0',
+    version='1.0.3',
     description='Check for running and completed tasks in Camunda',
     executables=[executable],
     options={'build_exe':
