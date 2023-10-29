@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+.p-datatable .p-datatable-tbody > tr > td {
+  padding: 0.2rem 0.5rem;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  padding: 0.2rem 0.5rem;
+}
+
+td {
+  white-space: nowrap;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.p-button {
+  padding: 0.05rem 0.35rem;
+}
+
+.button-container {
+  width: 35px;
+}

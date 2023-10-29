@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyodbc = "4.0.39"
+flask = "2.3.2"
+requests = "2.31.0"
+flask-cors = "4.0.0"
+psycopg2-binary = "2.9.6"
+cx-freeze = "6.15.5"
+flask-compress = "1.13"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.12"

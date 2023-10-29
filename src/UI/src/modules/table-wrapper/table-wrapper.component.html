@@ -1,0 +1,35 @@
+<input *ngIf="tableInfo && tableInfo.showGlobalFilter" (input)="globalFilter(table, $event)" placeholder="Global Search" style="width: 100%" type="text" />
+<p-table
+  #table
+  *ngIf="tableInfo && tableData"
+  [columns]="tableInfo.columnList"
+  [paginator]="true"
+  [rows]="25"
+  [tableStyle]="{ 'min-width': '50rem' }"
+  [value]="tableData"
+  responsiveLayout="stack"
+>
+  <ng-template let-columns pTemplate="header">
+    <tr>
+      <th *ngIf="tableInfo.buttonList"></th>
+      <th *ngFor="let columnName of columns" [pSortableColumn]="columnName">
+        {{ columnName }}
+        <p-sortIcon [field]="columnName"></p-sortIcon>
+      </th>
+    </tr>
+  </ng-template>
+  <ng-template let-columns="columns" let-rowData pTemplate="body">
+    <tr>
+      <td *ngIf="tableInfo.buttonList">
+        <div class="button-container">
+          <ng-container *ngFor="let buttonName of tableInfo.buttonList">
+            <p-button (click)="onRowClick(rowData)">{{ buttonName }}</p-button>
+          </ng-container>
+        </div>
+      </td>
+      <td *ngFor="let columnName of columns">
+        {{ rowData[columnName] }}
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
