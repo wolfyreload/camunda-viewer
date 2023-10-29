@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Spin up new container for postgresql
 docker rm -f posgresql-14-camunda
